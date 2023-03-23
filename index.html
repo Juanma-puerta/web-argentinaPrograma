@@ -12,21 +12,31 @@
     <link rel="stylesheet" href="estilos.css">
      <!-- Fuentes Externas -->
 
-    <title>Curriculum-Vitae</title>
+    <title>Document</title>
 </head>
 
 <body>
-    <header> <h1>Juan Manuel Puerta</h1></header>
+    <header>
+        <div><h1>Juan Manuel Puerta</h1></div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#estudio">Estudios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
     <div class="contenedor-banner imagen-banner centrado">
         <div class="banner centrado">
             <h2>Juan Manuel Puerta</h2>
             <p>Estudiante Universitario en:  <span class="typed"></span></p>
         </div>
     </div>
+    <!-- Experiencia -->
     <div class="contenedor">
         <div class="subtitulo"><h2>Experiencia</h2></div>
         <main>
-            <section class="contenedor-experiencia">
+            <section class="contenedor-experiencia" id="experiencia">
                 <div class="experiencia">
     
                     <div class="seccion1">
@@ -73,7 +83,7 @@
         <aside class="contenedor-personales">
             <img src="https://randomuser.me/api/portraits/lego/0.jpg" alt="un lego" class="lego">
 
-            <div class="personales centrado">
+            <div class="personales centrado" >
 
                 <!-- Icono svg -->
 
@@ -109,7 +119,8 @@
             </div>
         </aside>
     </div>
-    <section class="contenedor-estudios">
+    <!-- Estudios -->
+    <section class="contenedor-estudios" id="estudio">
         <div><h2>Estudios</h2></div>
         <div class="estudios">
             <p>Secundario Completo</p>
@@ -124,16 +135,44 @@
             <span>Universidad Tecnológica Nacional</span>
         </div>
     </section>
+    <!-- Contacto -->
+    <div class="contacto-contenedor" id="contacto">
+        <div class="contacto-personal">
+            <h2>Contacto</h2>
+            <a href="">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+                </svg>
+                1-623-616-3875
+            </a>
+            <a href="">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <rect x="3" y="5" width="18" height="14" rx="2" />
+                    <polyline points="3 7 12 13 21 7" />
+                </svg>
+                lacus.cras@hotmail.ca
+            </a>  
+        </div>
+        <form action="#">
+            <input type="text" name="Nombre" placeholder="Ingrese su Nombre" class="contenedores" required>
+            <input type="email" name="Email" placeholder="Ingrese su correo" class="contenedores" required>
+            <input type="tel" name="Telefono" placeholder="Ingrese su Número de teléfono" class="contenedores" required>
+            <textarea name="mensaje"  placeholder="Ingrese un mensaje con su motivo (Opcional)"></textarea>
+            <input type="submit" name="Enviar" value="Enviar formulario" class="boton-enviar">
+        </form>
+    </div>
 
-    <footer class="contenedor-contacto">
-        <div class="contacto">
+    <footer class="contenedor-redes">
+        <div class="redes" class="contacto">
             
-            <a href="https://www.facebook.com/"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <a class="separacion" href="https://www.facebook.com/"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                 <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
               </svg></a>
 
-              <a href="https://www.instagram.com/">
+              <a class="separacion" href="https://www.instagram.com/">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                     <rect x="4" y="4" width="16" height="16" rx="4" />
